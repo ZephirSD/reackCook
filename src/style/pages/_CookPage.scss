@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    h1 {
+        text-align: center;
+        font-weight: 550;
+        color: rgb(248, 84, 111);
+    }
+
+    input[type="text"] {
+        border: none;
+        padding: 5px 15px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}
+
+section.grid_card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 15px;
+}
