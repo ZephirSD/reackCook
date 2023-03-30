@@ -6,6 +6,12 @@
     border: rgb(248, 84, 111) 1px solid;
     border-radius: 25px;
 
+    .titre_card {
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: 1.2px;
+    }
+
     .img_repas {
         img {
             width: 100%;
@@ -17,6 +23,7 @@
     .desc_repas {
         text-align: justify;
         height: 280px;
-        overflow-y: scroll;
+        overflow-y: auto;
+        font-size: 14px;
     }
 }
