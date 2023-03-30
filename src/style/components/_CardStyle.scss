@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 25px;
+    border: rgb(248, 84, 111) 1px solid;
+    border-radius: 25px;
+
+    .img_repas {
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .desc_repas {
+        text-align: justify;
+        height: 280px;
+        overflow-y: scroll;
+    }
+}
