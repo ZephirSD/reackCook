@@ -6,14 +6,14 @@ const CookPage = () => {
     const [searchRepas, setSearchRepas] = useState("");
     const [repasList, setrepasList] = useState([]);
     const fetchRepas = () => {
-        axios.get("https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchRepas)
+        axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchRepas}`)
             .then(response => setrepasList(response.data.meals))
     }
     useEffect(fetchRepas, [searchRepas]);
     return (
         <>
             <header>
-                <h1 className="titre">Reack Cook</h1>
+                <h1 className="titre">React Cook</h1>
                 <input type="text" onChange={(e) => setSearchRepas(e.target.value)} className='inputSearch'/>
             </header>
             <section className="grid_card">
