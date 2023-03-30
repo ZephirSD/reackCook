@@ -1,9 +1,11 @@
 import React from 'react';
-import  './style/style.scss';
+import CookPage from './pages/CookPage';
+import  './style/index.scss';
 
 function App() {
   return (
     <>
+      <CookPage/>
     </>
   )
 }
