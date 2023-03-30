@@ -2,24 +2,23 @@
 // @import url();
 
 //Création de varibles de styles
-:root{
+:root {
     --full-width: 100%;
     --full-height: 100vh;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
 }
 
 //Thème clair et sombre pour le projet
-@media (prefers-color-scheme: light){
+@media (prefers-color-scheme: light) {}
 
-}
-
-@media (prefers-color-scheme: dark){
-
-}
+@media (prefers-color-scheme: dark) {}
 
 //Import de fichiers styles des composants
-// @import url();
+@import url(pages/_CookPage.scss);
+@import url(components/_CardStyle.scss);
