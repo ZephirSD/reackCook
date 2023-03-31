@@ -17,7 +17,7 @@ const CookPage = () => {
                 <input type="text" onChange={(e) => setSearchRepas(e.target.value)} className='inputSearch'/>
             </header>
             <section className="grid_card">
-                {repasList
+                {repasList && repasList
                     .filter((search) => search.strMeal.toLowerCase().includes(searchRepas.toLowerCase()))
                     .map((repas, index) => (
                     <Card key={index} source={repas} />
